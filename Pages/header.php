@@ -77,7 +77,7 @@ if (isset($_SESSION['Login'])) {
                                     echo $user['FullName'];
                                 }   
                                 ?>
-                                <img id = "ava" class=" AVT h-25 w-25" src="<?php echo $user['AVT']; ?>" alt="">
+                                <img id = "ava" style="border-radius:500px" class=" AVT h-25 w-25" src="<?php echo $user['AVT']; ?>" alt="">
                             </div>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
