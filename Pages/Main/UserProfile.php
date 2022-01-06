@@ -23,7 +23,7 @@ if (!isset($_SESSION['Login'])) {
         ?>
             <tr>
                 <td id=></td>
-                <td><img src="<?php echo $dong['AVT'] ?>"></td>
+                <td><img style="height:30%; width:30%; border-radius:500px;" src="<?php echo $dong['AVT'] ?>"></td>
             </tr>
             <tr>
                 <td>Name: </td>

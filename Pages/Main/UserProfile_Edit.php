@@ -24,7 +24,7 @@ $query_sua_thongtin = mysqli_query($mysqli, $sql_sua_thongtin);
         <form method="POST" action="Pages/Main/EditUser_process.php?idedit=<?php echo $idedit ?>" enctype="multipart/form-data">
             <tr>
                 <td></td>
-                <td><img src="<?php echo $dong['AVT'] ?>"></td>
+                <td><img  src="<?php echo $dong['AVT'] ?>"></td>
             </tr>
             <tr>
                 <td></td>

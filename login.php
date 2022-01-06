@@ -20,12 +20,7 @@
 </head>
 
 <body>
-<form action="signup.php"> 
 
-                        <button class="btn btn-outline-info btn-rounded btn-block my-4 mb-3 waves-effect  "
-                             id ="signupbutton1"   type="submit" value="Sign Up">Sign Up </button>
-                        
-                        </form>
     <div class="container">
         <div class="card-login">
             <div class="header">
@@ -45,7 +40,15 @@
                     <div class="form-group">
                         <a href="ForgotPassword.php">Forgot Password?</a>  
                     </div>
+                  
                 </form>
+                  <div class="form-group" style="text-align:center;">Or</div>
+                    <form action="signup.php"> 
+
+                        <button class="btn btn-outline-info btn-rounded btn-block my-4 mb-3 waves-effect  "
+                             id ="signupbutton1"   type="submit" value="Sign Up">Sign Up </button>
+                        
+                        </form>
             </div>
         </div>
     </div>

@@ -72,7 +72,7 @@
             <p>You have requested reset your password for a appstore account. Please click button bellow to reset your password</p>
             <button style="background-color:#38c4d3;border:none;border-radius:5px;padding:10px 20px;">
             <a style="color:white;text-decoration: none;"
-            href="http://localhost/Web/Pages/Main/VerifiedEmailForPassword.php?email='.$email.'&hash='.$hash.'">Verification</a></button>
+            href="http://localhost:8888/Web/Pages/Main/VerifiedEmailForPassword.php?email='.$email.'&hash='.$hash.'">Verification</a></button>
             <p style="color:red;">*This email is valid only within 10 minutes</p>
             <p>If it\'s not you, please ignore this email</p>';
             $mail->send();
@@ -85,7 +85,7 @@
         require_once "PHPMailer/SMTP.php";
         require_once "PHPMailer/Exception.php";
         $emailHost = "danghieu140701@gmail.com";
-        $emailPasswordHost = "gulmeaqxkntfjhpn";
+        $emailPasswordHost = "wbtwqaetggrlgajw";
         $mail = new PHPMailer(true);    
         try{
             $mail->isSMTP();
@@ -108,7 +108,7 @@
             <p>Your app have seen </p>
             <h3>Hi '.$fullName.'</h3>
             <p>If it\'s not you, please ignore this email</p>
-            </div><footer style="background-color:#1fa9b8;color:white;padding:30px;"><p>&copy; Copyright by Thai - Hieu - Bao</p></footer></div>';
+            </div><footer style="background-color:#1fa9b8;color:white;padding:30px;"><p>&copy;</p></footer></div>';
             $mail->send();
         }catch(Exception $e) {
             echo $e->getMessage();
