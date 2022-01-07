@@ -58,13 +58,12 @@ $query_changeDetail = mysqli_query($mysqli,$sql_changeDetail);
             </tr>
        
         <tr>
-             <!-- <td><input class="btn btn-success" type="button" name="back" value="Back"></td>
-                      -->
-                <td><input class="btn btn-success" type="submit" name="save" value="Save Change"></td>
+             <!-- <td><input class="btn btn-success" type="submit" name="back" value="Back"></td> -->
+                     
+                <td><input class="btn btn-success" type="submit" name="saveAdmin" value="Save Change"></td>
                        
                 
             </tr>
-
 
 
         <?php

@@ -1,7 +1,7 @@
 <?php
 include '../../config/config.php';
-if (isset($_POST['save'])) {
-    $save = $_POST['save'];
+if (isset($_POST['saveAdmin'])) {
+    $save = $_POST['saveAdmin'];
 } else {
     $save = '';
 }
@@ -16,28 +16,29 @@ if (isset($_POST['Name'])) {
 } else {
     $fullname = '';
 }
+if (isset($_POST['Type_App'])) {
+    $type_app = $_POST['Type_App'];
+} else {
+    $type_app = '';
+}
 
-// if (isset($_POST['email'])) {
-//     $email = $_POST['email'];
-// } else {
-//     $email = '';
-// }
-// if (isset($_POST['password'])) {
-//     $password = $_POST['password'];
-// } else {
-//     $password = '';
-// }
-// if (isset($_POST['level'])) {
-//     $level = $_POST['level'];
-// } else {
-//     $level = '';
-// }
+if (isset($_POST['Describe_App'])) {
+    $describe_app = $_POST['Describe_App'];
+} else {
+    $describe_app= '';
+}
+if (isset($_POST['Paid'])) {
+    $paid = $_POST['Paid'];
+} else {
+    $paid = '';
+}
 
 
-if (isset($_POST['save'])) {
+
+if (isset($_POST['saveAdmin'])) {
     $sql_update = "UPDATE app_item SET
     app_item.Name = '$fullname',
-    -- app_item.Pass = '$password',
+     app_item.
     -- app_item.Level = '$level',
     -- app_item.Email = '$email'
     WHERE ID_App = '$ID' ";
