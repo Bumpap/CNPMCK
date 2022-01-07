@@ -44,6 +44,19 @@
                   {
                     include('Main/ManageApps.php');
                   }
+
+                  elseif($tam=="Add_App_Admin")
+                  {
+                    include('Main/Add_App_Admin.php');
+                  }
+                    elseif($tam=="Edit_App_Admin")
+                  {
+                    include('Main/Edit_App_Admin.php');
+                  }
+                  //   elseif($tam=="Delete_App_Admin")
+                  // {
+                  //   include('Main/Delete_App_Admin.php');
+                  // }
                 elseif($tam=="AppDetail")
                   {
                     include('Main/App_Detail.php');
@@ -92,6 +105,10 @@
                 elseif($tam=="ManageAccount")
                 {
                     include('Main/ManageAccount.php');
+                }
+                elseif($tam=="ManageApplication")
+                {
+                    include('Main/ManageApplication.php');
                 }
                 elseif($tam=="AddAccount")
                 {
