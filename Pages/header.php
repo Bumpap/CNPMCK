@@ -100,7 +100,7 @@ if (isset($_SESSION['Login'])) {
                                 <a class="dropdown-item" href="index.php?quanly=WAF&idedit=<?php echo $_SESSION['Login'] ?>">Examine Application</a>
                                 <a class="dropdown-item" href="index.php?quanly=Manage_Type">Manage Genre</a>
                                 <a class="dropdown-item" href="CreateCard.php">Create Card</a>
-                                <a class="dropdown-item" href="">Manage Account</a>
+                                <a class="dropdown-item" href="index.php?quanly=ManageAccount&idedit=<?php echo $_SESSION['Login'] ?>">Manage Account</a>
                             <?php
                             }
                             ?>

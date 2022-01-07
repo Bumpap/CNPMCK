@@ -89,6 +89,18 @@
                 {
                     include('Main/Manage_Type.php');
                 }
+                elseif($tam=="ManageAccount")
+                {
+                    include('Main/ManageAccount.php');
+                }
+                elseif($tam=="AddAccount")
+                {
+                    include('Main/AddAccount.php');
+                }
+                elseif($tam=="EditAccount")
+                {
+                    include('Main/EditAccount.php');
+                }
                 elseif($action=="View_Detail_Application")
                 {
                     include('Main/WAF_Detail.php');
@@ -105,7 +117,8 @@
                   {
                     include('Main/index.php');
                   } 
-                ?>
+            ?> 
+            
          </div>
     </div>
 </div>
