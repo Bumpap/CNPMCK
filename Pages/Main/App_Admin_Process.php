@@ -91,7 +91,7 @@
     }
     $Admin = "Admin";
     $Status = "Valid";
-    if(isset($_POST['save'])){
+    if(isset($_POST['AddApp'])){
         $sql = "INSERT INTO app_item(app_item.Name,Type_App,Paid,Describe_App,Develop,Num_Down,Icon,app_item.Status) 
         values('$Name','$Type_App','$Paid','$Describe_App','$Admin','$Num_Down','$Image ','$Status')";
          mysqli_query($mysqli, $sql);

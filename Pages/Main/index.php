@@ -11,14 +11,29 @@
 
 
     <div class="carousel-inner " role="listbox">
-        <div id="caro_img" class="carousel-item active"><img class="d-block img-fluid" src="image\1.1.1.1 car.png"
-                alt="First slide" /></div>
-        <div id="caro_img" class="carousel-item"><img class="d-block img-fluid" src="image\candycrush car.png" alt="Second slide" />
+        <!-- <a href="index.php?quanly=AppDetail&idApp=1"> -->
+            <div id="caro_img" class="carousel-item active"><a href="index.php?quanly=AppDetail&idApp=1"><img class="d-block img-fluid" src="image\1.1.1.1 car.png"
+                alt="First slide" /></a></div>
+            <!-- </a> -->
+        <!-- <a href="index.php?quanly=AppDetail&idApp=2">  -->
+            <div  id="caro_img" class="carousel-item">
+                <a href="index.php?quanly=AppDetail&idApp=2">
+                <img class="d-block img-fluid" src="image\candycrush car.png" alt="Second slide" />
+                </a>
+             </div>
+        <!-- </a> -->
+        <div id="caro_img" class="carousel-item">
+            <a href="index.php?quanly=AppDetail&idApp=4"><img class="d-block img-fluid" src="image\tft car.png" alt="Third slide" />
+            </a>
         </div>
-        <div id="caro_img" class="carousel-item"><img class="d-block img-fluid" src="image\tft car.png" alt="Third slide" /></div>
-        <div id="caro_img" class="carousel-item"><img class="d-block img-fluid" src="image\beaminbg.png" alt="Fourth slide" /></div>
-        <div id="caro_img" class="carousel-item"><img class="d-block img-fluid" src="image\tikibg.png" alt="Fifth slide" /></div>
-        <div id="caro_img" class="carousel-item"><img class="d-block img-fluid" src="image\gojekbg.jpg" alt="Sixth slide" /></div>
+        <div id="caro_img" class="carousel-item">  <a href="index.php?quanly=AppDetail&idApp=14">
+            <img class="d-block img-fluid" src="image\tikibg.png" alt="Fifth slide" />
+    </a>
+        </div>
+        <div id="caro_img" class="carousel-item"> <a href="index.php?quanly=AppDetail&idApp=15">
+            <img class="d-block img-fluid" src="image\gojekbg.jpg" alt="Sixth slide" />
+</a>
+        </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -58,7 +73,7 @@
             ?>
         <div class="col-lg-4 col-md-6 mb-4 float-left my-5">
             <div class="card h-100" id="card">
-                <a href="#"><img class="card-img-top" src="<?php echo $row_pro['Icon'] ?>"> </a>
+               <a href="index.php?quanly=AppDetail&idApp=<?php echo $row_pro['ID_App']?>"><img class="card-img-top" src="<?php echo $row_pro['Icon'] ?>"> </a>
                 <div class="card-body">
                     <h4 class="card-title"><a href="index.php?quanly=AppDetail&idApp=<?php echo $row_pro['ID_App']?>">
                             <?php echo $row_pro['Name'] ?></a></h4>
@@ -88,7 +103,7 @@
                         ?>
         <div class="col-lg-4 col-md-6 mb-4 float-left my-5">
             <div class="card h-100" id="card">
-                <a href="#"><img class="card-img-top" src="<?php echo $row_pro['Icon'] ?>"> </a>
+                <a href="index.php?quanly=AppDetail&idApp=<?php echo $row_pro['ID_App']?>"><img class="card-img-top" src="<?php echo $row_pro['Icon'] ?>"> </a>
                 <div class="card-body">
                     <h4 class="card-title"><a href="index.php?quanly=AppDetail&idApp=<?php echo $row_pro['ID_App']?>">
                             <?php echo $row_pro['Name'] ?></a></h4>
