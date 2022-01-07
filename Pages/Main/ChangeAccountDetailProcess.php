@@ -11,31 +11,31 @@ if (isset($_POST['ID'])) {
 } else {
     $ID = '';
 }
-if (isset($_POST['Icon'])) {
-    $fullname = $_POST['Icon'];
+if (isset($_POST['fullname'])) {
+    $fullname = $_POST['fullname'];
 } else {
     $fullname = '';
 }
 
-if (isset($_POST['Type_App'])) {
-    $email = $_POST['Type_App'];
+if (isset($_POST['email'])) {
+    $email = $_POST['email'];
 } else {
     $email = '';
 }
-if (isset($_POST['Describe_App'])) {
-    $password = $_POST['Describe_App'];
+if (isset($_POST['password'])) {
+    $password = $_POST['password'];
 } else {
     $password = '';
 }
-if (isset($_POST['Paid'])) {
-    $level = $_POST['Paid'];
+if (isset($_POST['level'])) {
+    $level = $_POST['level'];
 } else {
     $level = '';
 }
 
 
 if (isset($_POST['save'])) {
-    $sql_update = "UPDATE  SET
+    $sql_update = "UPDATE user SET
     user.FullName = '$fullname',
     user.Pass = '$password',
     user.Level = '$level',

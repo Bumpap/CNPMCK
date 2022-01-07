@@ -20,8 +20,8 @@ $query_changeDetail = mysqli_query($mysqli,$sql_changeDetail);
             <td><input class="form-control" type="text" name="Name" value="<?php echo $row['Name'] ?>"></td>
         </tr> -->
         <tr>
-                <td>Image</td>
-                <td><input class="form-control" type="file" name="Icon" value="<?php echo $row['Icon'] ?>"><?php echo $row['Icon'] ?></td>
+                <td>Icon</td>
+                <td><input class="form-control" type="file" name="Image" value="<?php echo $row['Icon'] ?>"><?php echo $row['Icon'] ?></td>
             </tr>
         
         <tr>
@@ -31,7 +31,7 @@ $query_changeDetail = mysqli_query($mysqli,$sql_changeDetail);
         <tr>
                 <td>Type</td>
                 <td><select class="form-select" name="Type_App" aria-label="Default select example" required>
-                    <option selected value="<?php echo $row['Type_App'] ?>"> <?php echo $row['Type_App'] ?> </option>;
+
                         <?php
                         $sql_lietke = "SELECT * FROM manage_type";
                         $query_lietke = mysqli_query($mysqli, $sql_lietke);
@@ -60,7 +60,7 @@ $query_changeDetail = mysqli_query($mysqli,$sql_changeDetail);
         <tr>
              <!-- <td><input class="btn btn-success" type="submit" name="back" value="Back"></td> -->
                      
-                <td><input class="btn btn-success" type="submit" name="saveAdmin" value="Save Change"></td>
+                <td><input class="btn btn-success" type="submit" name="save" value="Save Change"></td>
                        
                 
             </tr>

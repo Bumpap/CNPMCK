@@ -1,7 +1,7 @@
 <?php
 include '../../config/config.php';
-if (isset($_POST['saveAdmin'])) {
-    $save = $_POST['saveAdmin'];
+if (isset($_POST['save'])) {
+    $save = $_POST['save'];
 } else {
     $save = '';
 }
@@ -33,16 +33,27 @@ if (isset($_POST['Paid'])) {
     $paid = '';
 }
 
+    if (isset($_FILES['Image'])) {
+        $Image = "image/" . $_FILES['Image']['name'];
+        $Image_tmp =  $_FILES['Image']['tmp_name'];
+        $Path = "../../image/" . $_FILES['Image']['name'];
+    } else {
+        $Image = "";
+        $Image_tmp = "";
+        $Path =  "";
+    }
 
 
-if (isset($_POST['saveAdmin'])) {
+if (isset($_POST['save'])) {
     $sql_update = "UPDATE app_item SET
+    Icon = '$Image',
     app_item.Name = '$fullname',
-     app_item.
-    -- app_item.Level = '$level',
-    -- app_item.Email = '$email'
+    Type_App = ' $type_app',
+    Paid = '$paid',
+    Describe_App = '$describe_app',
     WHERE ID_App = '$ID' ";
     mysqli_query($mysqli, $sql_update);
+    move_uploaded_file($Image_tmp,$Path);
     header(
         'Location:../../index.php?quanly=ManageApplication'
     );
