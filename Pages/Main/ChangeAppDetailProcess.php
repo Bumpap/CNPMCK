@@ -12,25 +12,25 @@ if (isset($_POST['ID_App'])) {
     $ID = '';
 }
 if (isset($_POST['Name'])) {
-    $fullname = $_POST['Name'];
+    $Name = $_POST['Name'];
 } else {
-    $fullname = '';
+    $Name = '';
 }
 if (isset($_POST['Type_App'])) {
-    $type_app = $_POST['Type_App'];
+    $Type_App = $_POST['Type_App'];
 } else {
-    $type_app = '';
+    $Type_App = '';
 }
 
 if (isset($_POST['Describe_App'])) {
-    $describe_app = $_POST['Describe_App'];
+    $Describe_App = $_POST['Describe_App'];
 } else {
-    $describe_app= '';
+    $Describe_App= '';
 }
 if (isset($_POST['Paid'])) {
-    $paid = $_POST['Paid'];
+    $Paid = $_POST['Paid'];
 } else {
-    $paid = '';
+    $Paid = '';
 }
 
     if (isset($_FILES['Image'])) {
@@ -46,11 +46,10 @@ if (isset($_POST['Paid'])) {
 
 if (isset($_POST['save'])) {
     $sql_update = "UPDATE app_item SET
-    Icon = '$Image',
-    app_item.Name = '$fullname',
-    Type_App = ' $type_app',
-    Paid = '$paid',
-    Describe_App = '$describe_app',
+    app_item.Icon = '$Image',
+    app_item.Type_App = '$Type_App',
+    app_item.Paid = '$Paid',
+    app_item.Describe_App = '$Describe_App'
     WHERE ID_App = '$ID' ";
     mysqli_query($mysqli, $sql_update);
     move_uploaded_file($Image_tmp,$Path);

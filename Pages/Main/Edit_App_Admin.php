@@ -11,7 +11,8 @@ $query_changeDetail = mysqli_query($mysqli,$sql_changeDetail);
     <form action="Pages/Main/ChangeAppDetailProcess.php" enctype="multipart/form-data" method="post">
         <?php 
         while($row = mysqli_fetch_array($query_changeDetail)){
-    ?>
+    ?>  
+
         <h1> Edit App  <?php echo $row['Name'] ?></h1>
         <input class="form-control" type="text" name="ID_App" value="<?php echo $row['ID_App'] ?>" required hidden>
 
